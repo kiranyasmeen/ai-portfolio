@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoFrame | The Brutalist Portfolio Framework</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;900&family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #000000;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Unbounded', sans-serif;
+            overflow-x: hidden;
+        }
+        .mono {
+            font-family: 'Space Mono', monospace;
+        }
+        .brutalist-border {
+            border: 4px solid black;
+        }
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .marquee-container {
+            border-top: 4px solid black;
+            border-bottom: 4px solid black;
+            padding: 20px 0;
+            margin: 100px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="p-10 flex justify-between items-start border-b-4 border-black">
+        <div class="text-4xl font-black uppercase leading-[0.8]">Neo<br/>Frame</div>
+        <div class="text-right">
+            <div class="mono text-sm uppercase font-bold mb-4">[ Version 4.0 ]</div>
+            <button class="px-8 py-3 brutalist-border font-black uppercase text-xs hover:bg-black hover:text-white transition-all">Get the Template</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-32 px-10">
+            <h1 class="text-7xl md:text-[14rem] font-black uppercase leading-[0.8] tracking-tighter mb-20">
+                Design <br/>
+                Without <br/>
+                <span class="bg-black text-white px-4">Apology.</span>
+            </h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                <p class="text-2xl font-bold leading-tight">NeoFrame is an AI-enhanced portfolio system for developers who want their work to scream, not whisper. Zero fluff. 100% Impact.</p>
+                <div class="space-y-12">
+                    <div class="mono text-sm text-zinc-500 uppercase">
+                        // Core Philosophies <br/>
+                        1. Typography is the interface <br/>
+                        2. Contrast is the guide <br/>
+                        3. Speed is the feature
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="marquee-container">
+            <div class="marquee text-8xl font-black uppercase">
+                NEOFRAME — AI POWERED — BRUTALIST DESIGN — NO SHADOWS — RAW CODE — NEOFRAME — AI POWERED — BRUTALIST DESIGN — NO SHADOWS — RAW CODE —
+            </div>
+        </div>
+
+        <section class="p-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border-4 border-black">
+                <div class="p-12 border-b-4 md:border-b-0 md:border-r-4 border-black hover:bg-zinc-100 transition-colors">
+                    <div class="text-6xl font-black mb-8">01</div>
+                    <h3 class="text-2xl font-black uppercase mb-4">Grid Control</h3>
+                    <p class="mono text-sm">Perfect alignment is boring. We use mathematical chaos to create visual interest.</p>
+                </div>
+                <div class="p-12 border-b-4 md:border-b-0 md:border-r-4 border-black hover:bg-zinc-100 transition-colors">
+                    <div class="text-6xl font-black mb-8">02</div>
+                    <h3 class="text-2xl font-black uppercase mb-4">AI Curation</h3>
+                    <p class="mono text-sm">Our neural engine automatically optimizes your project layout based on user focus.</p>
+                </div>
+                <div class="p-12 hover:bg-zinc-100 transition-colors">
+                    <div class="text-6xl font-black mb-8">03</div>
+                    <h3 class="text-2xl font-black uppercase mb-4">Pure Speed</h3>
+                    <p class="mono text-sm">No libraries. No bloat. Just raw CSS and high-performance React code.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-40 px-10 text-center">
+            <h2 class="text-6xl md:text-9xl font-black uppercase mb-16">Ready to <br/> stand out?</h2>
+            <button class="px-20 py-8 bg-black text-white text-2xl font-black uppercase hover:bg-white hover:text-black brutalist-border transition-all">Build Your Frame</button>
+        </section>
+    </main>
+
+    <footer class="p-10 border-t-4 border-black flex justify-between items-center">
+        <div class="mono text-xs uppercase font-bold">© 2026 NEOFRAME CORE</div>
+        <div class="flex gap-8 mono text-xs uppercase font-bold">
+            <a href="#" class="underline">Twitter</a>
+            <a href="#" class="underline">GitHub</a>
+            <a href="#" class="underline">Email</a>
+        </div>
+    </footer>
+</body>
+</html>
